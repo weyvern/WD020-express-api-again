@@ -6,9 +6,4 @@ const pool = new Pool({
   connectionString
 });
 
-pool.query('SELECT NOW()', (err, res) => {
-  console.log(err, res);
-  pool.end();
-});
-
 export default pool;
